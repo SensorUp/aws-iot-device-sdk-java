@@ -503,6 +503,25 @@ public class AWSIotMqttClient extends AbstractAwsIotClient {
     }
 
     /**
+     *
+     * @return the Maximum in flight messages
+     */
+    @Override
+    public int getMaxInflight() {
+        return super.getMaxInflight();
+    }
+
+    /**
+     *
+     * @param maxInflight
+     *              the new maximum in flight messages. The default value is 10.
+     */
+    @Override
+    public void setMaxInflight(int maxInflight) {
+        super.setMaxInflight(maxInflight);
+    }
+
+    /**
      * Gets the Last Will and Testament message currently configured. The Last
      * Will and Testament message with configured payload will be published when
      * the client connection is lost or terminated ungracefully, i.e. not

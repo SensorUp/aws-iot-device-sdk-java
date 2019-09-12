@@ -77,6 +77,12 @@ public class AWSIotConfig {
     public static final int MAX_OFFLINE_QUEUE_SIZE = 64;
 
     /**
+     * The default value for maximum in flight messages. See also
+     * {@link AWSIotMqttClient#getMaxInflight()}.
+     */
+    public static final int MAX_IN_FLIGHT = 10;
+
+    /**
      * The default value for device reporting interval (milliseconds). See also
      * {@link AWSIotDevice#getReportInterval()}.
      */

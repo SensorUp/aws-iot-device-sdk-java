@@ -63,6 +63,7 @@ public abstract class AbstractAwsIotClient implements AwsIotConnectionCallback {
     protected int baseRetryDelay = AWSIotConfig.CONNECTION_BASE_RETRY_DELAY;
     protected int maxRetryDelay = AWSIotConfig.CONNECTION_MAX_RETRY_DELAY;
     protected int maxOfflineQueueSize = AWSIotConfig.MAX_OFFLINE_QUEUE_SIZE;
+    protected int maxInflight = AWSIotConfig.MAX_IN_FLIGHT;
     protected boolean cleanSession = AWSIotConfig.CLEAN_SESSION;
     protected AWSIotMessage willMessage;
 
